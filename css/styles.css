@@ -1,0 +1,229 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+:root {
+  --imperial-red: #e63946ff; 
+  --honeydew: #f1faeeff; 
+  --powder-blue: #a8dadcff; 
+  --celadon-blue: #457b9dff; 
+  --prussian-blue: #1d3557ff;
+  --blanco-principal: #ecf0f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--blanco-principal);
+}
+
+
+.nav {
+  width: 100vw;
+  height: 100px;
+  background-color: var(--blanco-principal);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+  list-style-type: none;
+}
+
+.nav li {
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  transition: color 0.2s ease-out, transform 0.2s ease-out;
+  color: dimgray;
+}
+
+.nav li:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white;
+}
+
+.nav li:focus {
+  outline: none;
+  transform: scale(0.95);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+}
+
+.nav li:hover, .nav li:focus {
+  color: var(--celadon-blue);
+}
+
+li.active {
+  outline: none;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1), -4px -4px 10px white, 4px 4px 10px 0 rgba(0, 0, 0, 0.1) inset, -4px -4px 10px white inset;
+  color: var(--celadon-blue);
+}
+
+input {
+  caret-color: var(--imperial-red);
+}
+
+.login {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--blanco-principal);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container-login {
+  position: relative;
+  width: 350px;
+  height: 500px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: var(--blanco-principal);
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("../img/usuario.png");
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: var(--celadon-blue);
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.inputs label, .inputs input, .inputs button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.inputs label {
+  margin-bottom: 4px;
+}
+
+.inputs label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+.inputs input::placeholder {
+  color: gray;
+}
+
+.inputs input {
+  background: var(--blanco-principal);
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.inputs button {
+  color: white;
+  margin-top: 20px;
+  background: var(--celadon-blue);
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.inputs button:hover {
+  box-shadow: none;
+}
+
+.button-reg {
+  font-size: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: var(--prussian-blue);
+}
+
+.credits{
+  position: absolute;
+  font-size: 13px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: var(--prussian-blue);
+  background: var(--powder-blue);
+  border-radius: 10px;
+  padding: 2px;
+}
+
+table.neumorphic{
+  width: 600px;
+  border-spacing: 0;
+  color: #212121;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+  -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+table.neumorphic thead{
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6);
+}
+
+table.neumorphic th{
+  padding: 7px;
+}
+
+table.neumorphic>tbody>tr>td {
+  padding: 10px;
+  font-size: 14px;
+  position: relative;
+}
+
+
+table.neumorphic>tbody>tr:hover {
+  padding: 20px;
+  box-shadow: 9px 9px 16px rgba(163, 177, 198, 0.6),
+  -9px -9px 16px rgba(255, 255, 255, 0.6);
+}
+
+table.neumorphic tr td:first-child::before {
+  content: "";
+  position: absolute;
+  padding: 7px;
+  top: 0;
+  left: -5000px;
+  width: 10000px;
+  height: 100%;
+  z-index: -10;
+}
+
